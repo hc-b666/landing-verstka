@@ -31,6 +31,10 @@
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -40,7 +44,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -404,6 +408,66 @@ tr:last-child td:last-child {
 }
 
 .participants-section-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.participant-card {
+  padding: 0 37px;
+}
+
+.participant-image-wrap {
+  width: 320px;
+  height: 320px;
+  background-color: rgba(233, 222, 212, 1);
+  border-radius: 200px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.participant-image-wrap img {
+  width: 320px;
+  height: 320px;
+}
+
+.participant-card h4 {
+  color: var(--primary-500);
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.participant-card p {
+  color: var(--primary-500);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.participant-card button {
+  color: var(--blue);
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  padding: 0 12px;
+  height: 35px;
+  border: 1px solid var(--blue);
+  border-radius: 62px;
+  background: transparent;
+  transition: 0.4s;
+}
+
+.participant-card button:hover {
+  color: var(--white);
+  background-color: var(--blue);
 }
 /* Tournament Participants Section */
 
