@@ -41,14 +41,10 @@
         <h1>Превратите уездный город</h1>
         <h1>в столицу</h1>
         <h1>земного шара</h1>
-        <p>Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+        <p class="font-golos">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
         <div class="flex align-center">
-          <button class="flex align-center justify-center">
-            <p class="flex align-center justify-center">Поддержать шахматную мысль</p>
-          </button>
-          <button class="flex align-center justify-center">
-            <p class="flex align-center justify-center">Подробнее о турнире</p>
-          </button>
+          <a href="#support" class="font-golos flex align-center justify-center">Поддержать <br> шахматную мысль</a>
+          <a href="#steps" class="font-golos flex align-center justify-center">Подробнее <br> о турнире</a>
         </div>
       </div>  
       <!-- Banner Content -->
@@ -75,7 +71,7 @@
     <main>
 
       <!-- Support Section -->
-      <section class="container support-section flex flex-col">
+      <section id="support" class="container support-section flex flex-col">
 
         <div class="support-section-top flex align-center">
           <h2>Чтобы поддержать <br> Международный васюкинский <br> турнир посетите лекцию на тему: <br> <span>«Плодотворная дебютная идея»</span></h2>
@@ -112,7 +108,7 @@
               </tr>
           </table>
 
-          <a href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
+          <a href="#" class="font-golos">По всем вопросам обращаться в администрацию к К. Михельсону</a>
           </div>
         </div>
 
@@ -122,14 +118,14 @@
 
 
       <!-- Steps Section -->
-      <section class="container steps-section flex flex-col">
+      <section id="steps" class="container steps-section flex flex-col">
         
         <!-- Steps Section Title -->
         <div class="steps-section-title">
           <h1>Этапы преображения</h1>
           <div class="flex align-center">
             <h1>Васюков</h1>
-            <span>Будущие источники <br> обогащения васюкинцев</span>
+            <span class="font-golos">Будущие источники <br> обогащения васюкинцев</span>
           </div>
         </div>
 
@@ -182,61 +178,26 @@
 
 
       <!-- Tournament Participants Section -->
-      <div class="container participants-section flex flex-col">
+      <section class="container participants-section flex flex-col">
 
         <!-- Participants Title -->
         <div class="participants-section-title flex align-center justify-between">
           <h2>Участники турнира</h2>
           <div class="participants-section-title-controls flex align-center">
-            <button class="flex align-center justify-center">
+            <button id="left-button" class="flex align-center justify-center">
               <img src="./assets/icons/arror-left.svg" alt="Arrow Left Icon">
             </button>
-            <p><span>3</span> / 6</p>
-            <button class="flex align-center justify-center">
+            <p><span class="perview"></span> / <span class="total"></span></p>
+            <button id="right-button" class="flex align-center justify-center">
               <img src="./assets/icons/arrow-right.svg" alt="Arrow Right Icon">
             </button>
           </div>
         </div>
         
         <!-- Participants Main Content -->
-        <div class="participants-section-content">
-          
-          <!-- Participant Card -->
-          <div class="participant-card flex flex-col align-center">
-            <div class="participant-image-wrap flex align-end justify-center">
-              <img src="./assets/icons/participant-ava.svg" alt="Participant Avatar Icon">
-            </div>
+        <div class="participants-section-content"></div>
 
-            <h4>Хозе-Рауль Капабланка</h4>
-            <p>Чемпион мира по шахматам</p>
-            <button>Подробнее</button>
-          </div>
-
-          <!-- Participant Card -->
-          <div class="participant-card flex flex-col align-center">
-            <div class="participant-image-wrap flex align-end justify-center">
-              <img src="./assets/icons/participant-ava.svg" alt="Participant Avatar Icon">
-            </div>
-
-            <h4>Хозе-Рауль Капабланка</h4>
-            <p>Чемпион мира по шахматам</p>
-            <button>Подробнее</button>
-          </div>
-
-          <!-- Participant Card -->
-          <div class="participant-card flex flex-col align-center">
-            <div class="participant-image-wrap flex align-end justify-center">
-              <img src="./assets/icons/participant-ava.svg" alt="Participant Avatar Icon">
-            </div>
-
-            <h4>Хозе-Рауль Капабланка</h4>
-            <p>Чемпион мира по шахматам</p>
-            <button>Подробнее</button>
-          </div>
-          
-        </div>
-
-      </div>
+      </section>
 
     </main>
     <!-- Main -->
@@ -255,9 +216,17 @@
 
     <!-- Footer -->
     <footer>
-      <p>Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+      <div class="container">
+        <p class="font-golos">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+      </div>
     </footer>
     <!-- Footer -->
+
+
+
+    <!-- Scripts -->
+    <script src="./scripts/index.js" type="module"></script>
+    <!-- Scripts -->
 
 
 

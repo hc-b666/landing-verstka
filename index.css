@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Merriweather", serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -13,6 +14,10 @@
   --red: rgba(245, 73, 50, 1);
   --blue: rgba(48, 87, 162, 1);
   --white: rgba(255, 255, 255, 1);
+}
+
+.font-golos {
+  font-family: "Golos Text", sans-serif;
 }
 
 .flex {
@@ -98,7 +103,6 @@ button {
 }
 
 .banner-content > p {
-  font-family: "Golos Text", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -106,45 +110,42 @@ button {
   margin-bottom: 40px;
 }
 
-.banner-content > div {
+.banner-content div {
   width: 100%;
   gap: 16px;
 }
 
-.banner-content > div > button {
-  width: 260px;
-  height: 72px;
-  border: 2px solid var(--primary-700);
-  border-radius: 66px;
-  background: transparent;
-}
-
-.banner-content > div > button > p {
-  width: 165px;
-  height: 32px;
+.banner-content div a {
   color: var(--primary-700);
-  font-family: "Golos Text", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 20.8px;
   text-align: center;
-}
-
-.banner-content > div > button:first-child {
-  background-color: var(--primary-700);
+  text-decoration: none;
+  width: 260px;
+  height: 72px;
+  border-radius: 66px;
   transition: 0.4s;
 }
 
-.banner-content > div > button:first-child:hover,
-.banner-content > div > button:first-child:hover > p {
-  color: var(--primary-700);
-  border-color: var(--yellow);
-  background-color: var(--yellow);
+.banner-content div a:last-child {
+  border: 2px solid var(--primary-700);
 }
 
-.banner-content > div > button:first-child > p {
-  color: white;
+.banner-content div a:last-child:hover {
+  color: var(--white);
+  background-color: var(--primary-700);
+} 
+
+.banner-content div a:first-child {
+  color: var(--white);
+  background-color: var(--primary-700);
 }
+
+.banner-content div a:first-child:hover {
+  color: var(--primary-700);
+  background-color: var(--yellow);
+} 
 
 .marquee {
   width: 100%;
@@ -287,7 +288,6 @@ tr:last-child td:last-child {
 
 .support-section-bottom > div > a {
   color: var(--blue);
-  font-family: "Golos Text", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -313,7 +313,6 @@ tr:last-child td:last-child {
 
 .steps-section-title span {
   color: var(--blue);
-  font-family: "Golos Text", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -392,10 +391,18 @@ tr:last-child td:last-child {
   height: 44px;
   border-radius: 100%;
   background-color: var(--primary-500);
+  transition: 0.4s;
+}
+
+.participants-section-title-controls button:hover {
+  background-color: var(--yellow);
+}
+
+.participants-section-title-controls button:disabled {
+  background-color: rgba(214, 214, 214, 1);
 }
 
 .participants-section-title-controls p {
-  color: var(--primary-300);
   font-family: "Golos Text", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -403,8 +410,12 @@ tr:last-child td:last-child {
   text-align: left;
 }
 
-.participants-section-title-controls p span {
+.participants-section-title-controls p .perview {
   color: var(--primary-500);
+}
+
+.participants-section-title-controls p .total {
+  color: var(--primary-300);
 }
 
 .participants-section-content {
@@ -477,11 +488,11 @@ footer {
   background-color: rgba(233, 222, 212, 1);
 }
 
-footer > p {
+footer > .container p {
   color: var(--primary-500);
-  font-family: "Golos Text", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px;
+  text-align: justify;
 }
 /* FOOTER */
