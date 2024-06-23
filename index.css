@@ -11,6 +11,8 @@
   --primary-700: rgba(31, 31, 31, 1);
   --yellow: rgba(251, 206, 81, 1);
   --red: rgba(245, 73, 50, 1);
+  --blue: rgba(48, 87, 162, 1);
+  --white: rgba(255, 255, 255, 1);
 }
 
 .flex {
@@ -19,6 +21,10 @@
 
 .flex-col {
   flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
 }
 
 .align-center {
@@ -43,6 +49,7 @@ button {
   cursor: pointer;
 }
 
+/* BANNER CONTAINER */
 .banner-container {
   padding: 0 72px;
   width: 100%;
@@ -87,7 +94,7 @@ button {
 }
 
 .banner-content > p {
-  font-family: "Golos" Text;
+  font-family: "Golos Text", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -112,7 +119,7 @@ button {
   width: 165px;
   height: 32px;
   color: var(--primary-700);
-  font-family: "Golos" Text;
+  font-family: "Golos Text", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 20.8px;
@@ -162,7 +169,9 @@ button {
     transform: translateX(-100%);
   }
 }
+/* BANNER CONTAINER */
 
+/* SUPPORT SECTION */
 .support-section {
   gap: 64px;
   padding: 100px 0;
@@ -228,7 +237,7 @@ table {
 
 td {
   color: var(--primary-500);
-  font-family: "Golos" Text;
+  font-family: "Golos Text", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -273,15 +282,132 @@ tr:last-child td:last-child {
 }
 
 .support-section-bottom > div > a {
-  color: rgba(48, 87, 162, 1);
-  font-family: "Golos" Text;
+  color: var(--blue);
+  font-family: "Golos Text", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   text-decoration: none;
 }
+/* SUPPORT SECTION */
 
+/* STEPS SECTION */
+.steps-section {
+  padding: 100px 0;
+  gap: 54px;
+}
+
+.steps-section-title h1 {
+  color: var(--primary-500);
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.steps-section-title span {
+  color: var(--blue);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.steps-section-title > div {
+  gap: 16px;
+}
+
+.steps-section-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step-item {
+  padding: 20px;
+  background-color: rgba(233, 222, 212, 1);
+  gap: 16px;
+  position: relative;
+}
+
+.step-item p {
+  color: var(--primary-500);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.step-item img {
+  position: absolute;
+  bottom: 0;
+  right: -70px;
+}
+
+.step-number {
+  padding: 0 12px;
+  height: 36px;
+  border-radius: 60px;
+  background-color: var(--white);
+}
+
+.step-number span {
+  color: var(--primary-500);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+/* STEPS SECTION */
+
+/* Tournament Participants Section */
+.participants-section {
+  padding: 120px 0 140px;
+  gap: 60px;
+}
+
+.participants-section-title h2 {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.participants-section-title-controls {
+  gap: 14px;
+}
+
+.participants-section-title-controls button {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  background-color: var(--primary-500);
+}
+
+.participants-section-title-controls p {
+  color: var(--primary-300);
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.participants-section-title-controls p span {
+  color: var(--primary-500);
+}
+
+.participants-section-content {
+}
+/* Tournament Participants Section */
+
+/* FOOTER */
 footer {
   padding: 40px 72px 72px;
   background-color: rgba(233, 222, 212, 1);
@@ -289,8 +415,9 @@ footer {
 
 footer > p {
   color: var(--primary-500);
-  font-family: "Golos" Text;
+  font-family: "Golos Text", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px;
 }
+/* FOOTER */
