@@ -1,0 +1,41 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.font-golos {
+  font-family: "Golos Text", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}

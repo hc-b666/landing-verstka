@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/media.css">
   </head>
   <body>
     
@@ -20,36 +22,27 @@
     <div class="banner-container">
 
       <!-- Navbar -->
-      <nav class="navbar">
-        <div class="logo-wrap flex align-center">
-          <div class="logo-item flex">
-            <img src="./assets/icons/logo-knight.svg" alt="Logo Black Knight">
-            <img src="./assets/icons/logo-knight.svg" alt="Logo Black Knight">
-            <img src="./assets/icons/logo-knight.svg" alt="Logo Black Knight">
-            <img src="./assets/icons/logo-knight.svg" alt="Logo Black Knight">
-          </div>
-          <div class="flex flex-col justify-between">
-            <h6>КЛУБ</h6>
-            <h6>ЧЕТЫРЕХ КОНЕЙ</h6>
-          </div>
-        </div>
+      <nav class="container navbar">
+        <a href="#">
+          <img src="./assets/icons/logo.svg" alt="Logo Icon">
+        </a>
       </nav>
       <!-- Navbar -->
 
       <!-- Banner Content -->
-      <div class="banner-content">
-        <h1>Превратите уездный город</h1>
-        <h1>в столицу</h1>
-        <h1>земного шара</h1>
-        <p class="font-golos">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
-        <div class="flex align-center">
-          <a href="#support" class="font-golos flex align-center justify-center">Поддержать <br> шахматную мысль</a>
-          <a href="#steps" class="font-golos flex align-center justify-center">Подробнее <br> о турнире</a>
+      <div class="container">
+        <div class="banner-content flex flex-col">
+          <h1>Превратите уездный город</h1>
+          <h1>в столицу</h1>
+          <h1>земного шара</h1>
+          <p class="font-golos">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+          <div class="flex align-center">
+            <a href="#support" class="font-golos flex align-center justify-center">Поддержать <br> шахматную мысль</a>
+            <a href="#steps" class="font-golos flex align-center justify-center">Подробнее <br> о турнире</a>
+          </div>
         </div>
-      </div>  
+      </div>
       <!-- Banner Content -->
-
-      <!-- <img class="background-city" src="./assets/images/background-image.png" alt="Background City Image"> -->
 
     </div>
     <!-- Navbar and Banner -->
@@ -76,6 +69,7 @@
         <div class="support-section-top flex align-center">
           <h2>Чтобы поддержать <br> Международный васюкинский <br> турнир посетите лекцию на тему: <br> <span>«Плодотворная дебютная идея»</span></h2>
           <img src="./assets/images/support-image1.png" alt="Support Image" width="395px" height="250px">
+          <h2>посетите лекцию на тему: <span>«Плодотворная дебютная идея»</span></h2>
         </div>
 
         <div class="support-section-bottom flex">
@@ -87,23 +81,23 @@
           
             <table>
               <tr>
-                <td class="header">Место проведения:</td>
+                <td class="table-header">Место проведения:</td>
                 <td>Клуб «Картонажник»</td>
               </tr>
               <tr>
-                <td class="header">Дата и время мероприятия:</td>
+                <td class="table-header">Дата и время мероприятия:</td>
                 <td>22 июня 1927 г. в 18:00</td>
               </tr>
               <tr>
-                <td class="header">Стоимость входных билетов:</td>
+                <td class="table-header">Стоимость входных билетов:</td>
                 <td>20 коп.</td>
               </tr>
               <tr>
-                <td class="header">Плата за игру:</td>
+                <td class="table-header">Плата за игру:</td>
                 <td>50 коп.</td>
               </tr>
               <tr>
-                <td class="header">Взнос на телеграммы:</td>
+                <td class="table-header">Взнос на телеграммы:</td>
                 <td>100 руб. 21 руб. 16 коп.</td>
               </tr>
           </table>
@@ -122,11 +116,12 @@
         
         <!-- Steps Section Title -->
         <div class="steps-section-title">
-          <h1>Этапы преображения</h1>
+          <h1>Этапы преображения <span>Васюков</span></h1>
           <div class="flex align-center">
             <h1>Васюков</h1>
             <span class="font-golos">Будущие источники <br> обогащения васюкинцев</span>
           </div>
+          <span class="font-golos">Будущие источники обогащения васюкинцев</span>
         </div>
 
         <!-- Steps Section Main Content -->
